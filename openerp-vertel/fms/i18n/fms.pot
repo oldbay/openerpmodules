@@ -1,0 +1,1722 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* fms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-15 16:13+0000\n"
+"PO-Revision-Date: 2012-09-15 16:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fms
+#: field:fms.vehicles,work_order:0
+#: model:ir.ui.menu,name:fms.menu_fms_wo
+msgid "Work Orders"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,fcostpl:0
+#: help:fms.vehicles,fcostpm:0
+#: help:fms.vehicles,totfcost:0
+msgid "Fuel Cost from fuel log"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "98 (Super)"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Service"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Preventive Maintainance"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Approximate total service cost per mile"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "Diesel"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,itemtype:0
+msgid "Fluids"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Group By..."
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.open_board_fms
+#: model:ir.ui.menu,name:fms.menu_fms_dashboard_user
+msgid "Fleet Management Dashboard"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: field:fms.vehicles,model:0
+msgid "Model"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Vehicles per l/100km"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.fms_serv_templ_view
+msgid "Use templates to organize service items to be done for a class of vehicles. Actual Work Orders will be created based on a Service template. If you want to compare suppliers, create one template per supplier and vehicle class. A template can consist of service items from several suppliers, check points done by driver and mandatory inspections."
+msgstr ""
+
+#. module: fms
+#: field:fms.wo,state:0
+msgid "Task Status"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqz:0
+msgid "Weeks"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,location:0
+msgid "Select the stock location or create one for each vehicle(recommended) so that the spares, tyres etc are assossiated with the vehicle when issued"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Work Orders Tasks"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqdz:0
+msgid "Hours"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Card no"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,nextwo:0
+msgid "Next planned Work Order. If WO is missing the vehicle are possible out of WO-plans"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,lodometer:0
+msgid "last recorded odometer"
+msgstr ""
+
+#. module: fms
+#: help:fms.service.items,cost:0
+msgid "Approximate cost for service item"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_service_items_spares
+msgid "Service items to spare relation"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Service Item Occurance"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,litrepmtrend:0
+msgid "l/100km trend"
+msgstr ""
+
+#. module: fms
+#: help:fms.odometer,podometer:0
+msgid "previous recorded odometer"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: selection:fms.vehicles,state:0
+msgid "Out of Service"
+msgstr ""
+
+#. module: fms
+#: help:fms.wo,delay:0
+msgid "Delay time to fullfill the service (time where the vehicle are out of service)"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+msgid "Task Management"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.action_review_analytic_stage
+msgid "Change analytic for users that registers vehicles cost/expenses The accounting gets easier if you set up a special Journal for Vehicle operations such as purschases, link \n"
+"            Accounts Type Allowed for example bank, cash and payables and Accounts Allowed (a list of relevant vehicle\n"
+"            cost/expence accounts according to your chart of accounts in the Entry Control tab."
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_wo_tasks_spares_act
+msgid "Work Order Spares"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,nextwo:0
+msgid "Next WO"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_fuellog_form_act
+msgid "Fuellog"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_fuellog.py:50
+#, python-format
+msgid "You have a wrong expression \"%s\""
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,podometer:0
+msgid "Prev Odometer"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,costpm:0
+#: field:fms.service.templ,costpm:0
+msgid "Cost per Mile"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/account_invoice.py:77
+#, python-format
+msgid "Created new vehicle %s"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,litrepmtrend:0
+msgid "How fuel consumtion has changed"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,primarymeter:0
+msgid "Hour Meter"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,expcut:0
+msgid "Budgeted expenditure cut or alternative cost per month to calculate ROI"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo,duedate:0
+msgid "Due Date"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,vehicle_type:0
+msgid "Car"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,colour:0
+msgid "Colour"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.spares,state:0
+msgid "Request Draft"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqz:0
+#: field:fms.vehicles,days:0
+msgid "Days"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_vehicles_wo
+msgid "Vehicles With Out Work Order"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.labour,amount:0
+msgid "Amount"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+#: view:fms.fleet_card:0
+#: view:fms.fuellog:0
+#: view:fms.vehicles:0
+msgid "Notes"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.fms_expenses
+msgid "Here you have a list of all Fleet Card Expenses."
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Cards"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.labour,partner:0
+msgid "Workshop/Payee"
+msgstr ""
+
+#. module: fms
+#: help:fms.odometer,distance:0
+msgid "Distance entered during trip"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqz:0
+msgid "Years"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Service Item Details"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.templ,name:0
+msgid "Template Name"
+msgstr ""
+
+#. module: fms
+#: field:res.company,fms_fuellog_type:0
+msgid "Fuel expenses type"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Vehicle Info."
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,warrexpmil:0
+msgid "Expiry mileage for warranty of product"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Fuel Station Info."
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:160
+#, python-format
+msgid "Please register purchase date for the vehicle %s !"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,analytic_account_id:0
+msgid "Analytic Account"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,fueltankcap:0
+msgid "Fuel Tank Capacity"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_vehicles
+msgid "Holds records of Vehicles"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Distance Unit"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+msgid "Workflow Actions"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_service_templ
+msgid "The Template is a collection of service items."
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,litrepm:0
+#: field:fms.vehicles,litrepm:0
+msgid "l/100km"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.todo.category,name:fms.category_fms_config
+msgid "Fleet Management"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,ownership:0
+msgid "Rented"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.templ:0
+#: field:fms.service.templ,vehicle_ids:0
+#: model:ir.actions.act_window,name:fms.fms_vehicles_form_act
+#: model:ir.ui.menu,name:fms.menu_fms_vehicles
+msgid "Vehicles"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,qty:0
+msgid "Quantity of fuel"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:162
+#, python-format
+msgid "Please register initial odometer statement at purchase for the vehicle %s !"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,podometer:0
+msgid "From"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items.spares:0
+msgid "Service Item Spares"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:218
+#, python-format
+msgid "Cannot change service item with spares not in draft ! %s | %s %s"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Fuelling Info."
+msgstr ""
+
+#. module: fms
+#: field:fms.expenses,vehicle_id:0
+#: field:fms.odometer,vehicle_id:0
+#: view:fms.vehicles:0
+#: field:fms.wo,vehicle:0
+msgid "Vehicle"
+msgstr ""
+
+#. module: fms
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr ""
+
+#. module: fms
+#: field:fms.expenses,odometer:0
+#: view:fms.vehicles:0
+#: selection:fms.vehicles,primarymeter:0
+#: field:fms.wo,odometer:0
+msgid "Odometer"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Warranty Expiry"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:417
+#, python-format
+msgid "Cannot create work orders without a template, assign one first !"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+msgid "Vehicles Without WO"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "Mars"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,itemtype:0
+msgid "Others"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items.spares:0
+msgid "Service Spare Details"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Card Expenses"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+msgid "Work Order Task"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.templ:0
+msgid "Service Template"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,costpm:0
+msgid "Cost per mile"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,roi:0
+msgid "ROI"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+#: field:fms.service.items,freqd:0
+msgid "Mileage"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,ppartner:0
+msgid "Purchased From"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+#: field:fms.wo,wo:0
+#: model:ir.actions.act_window,name:fms.fms_wo_form_act
+msgid "Work Order"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,name:0
+#: field:fms.service.items.spares,serviceitem:0
+msgid "Service Item"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.spares,state:0
+msgid "Pending Move"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,bdate:0
+msgid "Date on which the mileage is recorded"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_fuellog
+msgid "Records the fuelling entries"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items.spares,qtyreqd:0
+#: field:fms.wo.tasks.spares,quantity:0
+msgid "Quantity"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.spares,wo:0
+msgid "Parent WO Task"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_review_servicetemplate_stage
+msgid "Add service templates"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_fuellog.py:264
+#: code:addons/fms/fms_odometer.py:98
+#: code:addons/fms/fms_service.py:158
+#: code:addons/fms/fms_service.py:160
+#: code:addons/fms/fms_service.py:162
+#: code:addons/fms/fms_service.py:164
+#: code:addons/fms/fms_service.py:166
+#: code:addons/fms/fms_service.py:218
+#: code:addons/fms/fms_service.py:241
+#: code:addons/fms/fms_service.py:295
+#: code:addons/fms/fms_service.py:301
+#: code:addons/fms/fms_service.py:417
+#: code:addons/fms/fms_vehicles.py:43
+#: code:addons/fms/fms_vehicles.py:60
+#, python-format
+msgid "Invalid action !"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.spares,state:0
+msgid "Spare Issued"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_config
+#: model:ir.ui.menu,name:fms.menu_fms_manager_config
+#: view:res.company:0
+msgid "Configuration"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Fleet Card"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,vehicle_type:0
+msgid "Class"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+msgid "Vehicles out of Service"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.action_review_servicetemplate_stage
+msgid "Service Templates are a list of Service Items suitable for a class or model of vehicle. Several Service Templates can be created with Service Items from competing vendors."
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,fuel:0
+msgid "Fuel"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_fuellog.py:50
+#, python-format
+msgid "Wrong description !"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,sparesreq:0
+#: view:fms.wo:0
+#: field:fms.wo,spares:0
+msgid "Spares Required"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,itemtype:0
+msgid "Type of Service"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+msgid "Task Details"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,pdate:0
+msgid "Date of Purchase of vehicle"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Total Qty"
+msgstr ""
+
+#. module: fms
+#: view:fms.fuellog:0
+#: view:fms.vehicles:0
+msgid "Fuel Logbook"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,bdate:0
+msgid "Recorded date"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo,wosysgen:0
+msgid "System Generated"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_service_items
+msgid "Different types of service tasks"
+msgstr ""
+
+#. module: fms
+#: help:res.company,fms_fuellog_type:0
+msgid "This is the Card Expenses Type that are to be used in Fuellogs"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,freq_days:0
+msgid "Frequency in days"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+msgid "My Board"
+msgstr ""
+
+#. module: fms
+#: field:fms.expenses,expenses_id:0
+msgid "Expense"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,itemtype:0
+msgid "Inspection"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.templ:0
+#: model:ir.actions.act_window,name:fms.fms_serv_templ_view
+#: model:ir.ui.menu,name:fms.menu_fms_serv_templ
+msgid "Service Templates"
+msgstr ""
+
+#. module: fms
+#: view:fms.odometer:0
+msgid "Odometer Logbook"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "Electric"
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,costpm:0
+msgid "Cost Per Mile"
+msgstr ""
+
+#. module: fms
+#: sql_constraint:fms.wo.tasks.spares:0
+msgid "The spare request no must be unique!"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,fixed_month:0
+msgid "Fixed Month"
+msgstr ""
+
+#. module: fms
+#: help:fms.odometer,cost:0
+msgid "Cost for the trip using vehicle cost per mile"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: field:fms.vehicles,state:0
+msgid "State"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_expenses
+msgid "Records expenses entries"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Invoices"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_manager
+msgid "Fleet Manager"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_account_invoice_line
+msgid "Invoice Line"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,ownership:0
+msgid "Owned"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "OR"
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,fms_expenses_id:0
+msgid "FMS Expenses"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_wo_tasks_labour
+msgid "WO labour Tasks"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,type:0
+#: view:fms.vehicles:0
+msgid "Type"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,primarymeter:0
+msgid "Primary Meter"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,freqdz:0
+#: field:fms.service.items,freqz:0
+msgid "unknown"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+#: model:ir.actions.act_window,name:fms.action_fms_vehicle_graph
+#: model:ir.actions.act_window,name:fms.action_fms_vehicle_graph1
+msgid "Fuel Consumtion l/100km"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_res_partner_address
+msgid "Partner Addresses"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Total Amount"
+msgstr ""
+
+#. module: fms
+#: view:fms.fuellog:0
+msgid "Analytic information"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.action_review_journal_stage
+msgid "The accounting gets easier if you set up a special Journal for Vehicle operations such as purschases, link \n"
+"            Accounts Type Allowed for example bank, cash and payables and Accounts Allowed (a list of relevant vehicle\n"
+"            cost/expence accounts according to your chart of accounts in the Entry Control tab."
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,podometer:0
+msgid "Odometer at Purchase"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.labour,state:0
+msgid "Verified"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Additional Details"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:164
+#, python-format
+msgid "There are not enought data for the operation (Lodometer) for the vehicle %s !"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: field:fms.vehicles,make:0
+msgid "Make"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+#: view:fms.service.templ:0
+#: field:fms.service.templ,items:0
+#: model:ir.actions.act_window,name:fms.fms_serv_items
+#: model:ir.ui.menu,name:fms.menu_fms_serv_items
+msgid "Service Items"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/account_invoice.py:41
+#, python-format
+msgid "Created new vehicle from %s"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_wo_tasks_spares
+msgid "WO Tasks spares requirement"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,schedname:0
+msgid "PM Schedule"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,note:0
+msgid "Note"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Manufacture Details"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "Biogas"
+msgstr ""
+
+#. module: fms
+#: view:fms.fuellog:0
+#: selection:fms.vehicles,state:0
+#: view:fms.wo:0
+#: selection:fms.wo,state:0
+#: selection:fms.wo.tasks.labour,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_review_serviceitems_stage
+msgid "Add service Items"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,ownership:0
+msgid "Private (owned by employee)"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items.spares,unit:0
+#: field:fms.wo.tasks.spares,unit:0
+msgid "Unit Of Use"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:166
+#, python-format
+msgid "There are not enought data for the operation (Miles per Year missing) for the vehicle %s !"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.spares,state:0
+msgid "State/Status"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_create_initial_fleet_cards_installer
+msgid "Create your Firsts Fleet Cards"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.labour,state:0
+msgid "Status"
+msgstr ""
+
+#. module: fms
+#: sql_constraint:fms.vehicles:0
+msgid "The registration no (name) of the vehicle must be unique !"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,warrexpmil:0
+msgid "(or) Mileage"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "August"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_odometer_form_act
+msgid "fms.odometer.act"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,itemtype:0
+msgid "Normal"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo.tasks.spares:0
+msgid "Work Order Spare issue"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,vehicle_type:0
+msgid "Bus"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,lodometer:0
+msgid "Last Odometer"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,roi:0
+msgid "Contract Return of Investment"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "June"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.labour,state:0
+msgid "Paid"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+#: field:fms.fleet_card,fuellog_ids:0
+#: view:fms.fuellog:0
+#: view:fms.odometer:0
+#: view:fms.vehicles:0
+#: field:fms.vehicles,fuellog:0
+#: model:ir.ui.menu,name:fms.menu_fms_fuellog
+msgid "Fuel Log"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo,servitem:0
+msgid "Service Task"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Vehicles Cost per Month"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqdz:0
+msgid "Kilometers"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: selection:fms.vehicles,state:0
+msgid "Active"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,costpmon:0
+msgid "Cost per month"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.labour,description:0
+msgid "Description of work"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,days:0
+msgid "Days that the vehicle has been on the road since purchase"
+msgstr ""
+
+#. module: fms
+#: field:fms.fleet_card,card_id:0
+msgid "Card"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Proforma"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:158
+#, python-format
+msgid "Please register statements in Odometer log or Fuel Log for the vehicle %s !"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "October"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Compute"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,location:0
+msgid "Stk Location"
+msgstr ""
+
+#. module: fms
+#: view:fms.odometer:0
+msgid "Record Info."
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: field:fms.vehicles,year:0
+msgid "Year"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:241
+#: code:addons/fms/fms_service.py:295
+#, python-format
+msgid "Cannot change service item with spares not in draft ! %s | %s"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,freqz:0
+msgid "Months"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Vehicle Details"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_manager_oms
+msgid "Operations Management"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,lmiles:0
+#: help:fms.vehicles,lmiles:0
+msgid "Miles per year"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,date:0
+#: field:fms.vehicles,warrexp:0
+msgid "Date"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Active vehicles without any Work Order in progress"
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,lmiles:0
+#: selection:fms.service.items,freqdz:0
+msgid "Miles"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,pdate:0
+msgid "Prev date"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+msgid "Cost per Month"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_review_analytic_stage
+msgid "Update users"
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo.tasks.labour,state:0
+msgid "Audited"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+#: view:fms.vehicles:0
+#: field:fms.vehicles,log:0
+msgid "History"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,expcut:0
+msgid "Expenditure Cut"
+msgstr ""
+
+#. module: fms
+#: sql_constraint:account.invoice:0
+msgid "Invoice Number must be unique per Company!"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,totfcost:0
+msgid "Total fuel Cost"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,odometer:0
+msgid "To"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_fms_vehicle_graph2
+msgid "Vehicle Cost per Month"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "To Plan"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Create Work Orders"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Period"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_vehicles_outofservice
+msgid "Vehicles Out of Service"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,qty:0
+msgid "Qty"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items.spares:0
+msgid "Service Item Spare Requirement"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,costpm:0
+#: help:fms.vehicles,costpmon:0
+msgid "Contract Cost per Month"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,freqn:0
+msgid "Frequency"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_account_invoice
+msgid "Invoice"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_odometer
+msgid "Recording of daily odometer reading"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+#: view:fms.fuellog:0
+#: view:fms.vehicles:0
+msgid "Cancel"
+msgstr ""
+
+#. module: fms
+#: selection:fms.odometer,type:0
+msgid "Official Matter"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,fueltype:0
+msgid "Fuel Used"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Vehicle Log"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Issuer"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_vehicles.py:43
+#, python-format
+msgid "vals! %s "
+msgstr ""
+
+#. module: fms
+#: selection:fms.wo,state:0
+msgid "In Progress"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,pdate:0
+msgid "Purchase Date"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "vehicles"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_expenses
+#: model:ir.ui.menu,name:fms.menu_fms_expenses
+msgid "Fleet Card Expenses"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.action_review_journal_stage
+msgid "Review and add Vehicel Journals"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Expenses Log"
+msgstr ""
+
+#. module: fms
+#: field:account.invoice.line,vehicle_id:0
+msgid "Vehicle Id"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,warrexp:0
+msgid "Expiry date for warranty of product"
+msgstr ""
+
+#. module: fms
+#: help:product.product,spare_ok:0
+msgid "Determines if the product is a vehicle spare."
+msgstr ""
+
+#. module: fms
+#: help:fms.service.items,fixed_month:0
+msgid "Service Item will be performed at this time every year"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,delay:0
+#: field:fms.wo,delay:0
+msgid "Delay"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "E85 (Etanole)"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,vehicle_type:0
+msgid "Other"
+msgstr ""
+
+#. module: fms
+#: model:ir.ui.menu,name:fms.menu_fms_odometer
+msgid "Odometer Statements"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,schedname:0
+msgid "Preventive maintainance schedule for this vehicle"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "Exp#"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Post Txn"
+msgstr ""
+
+#. module: fms
+#: selection:fms.service.items,itemtype:0
+msgid "Replace"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:301
+#, python-format
+msgid "Cannot change service item with spares not in draft !"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.fms_serv_items
+msgid "Service Items are a template for a Work Order Activity, a single point of service or inspection that has to be done with an arbitary frequency.  Service Items are related to Service Templates, but one Service Item can be related to several Service Templates. If you want to compare service suppliers, you can create Service Templates with Service Items related to different suppliers."
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,litrepm:0
+msgid "Sum of latest fuel log recordings"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo,scheddate:0
+msgid "Scheduled Date"
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_product_product
+msgid "Product"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Purchase Details"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.templ,description:0
+msgid "Description"
+msgstr ""
+
+#. module: fms
+#: help:account.invoice.line,fms_create:0
+msgid "Check this field if this line is a vehicle and you want to register it as a new. Use Analytic Account for additional costs"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "May"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.fms_vehicles_form_act
+msgid "Here you have a list of all vehicles that the company are responsible for. Vehicles can be owned, leased or hired and the economic analyses such cost per mile will be correct. Fuel Logs are held and services are planned if its relevant for the company. Fleet Cards management and fuel log matching purchase invoices.  Odometer readings can be done in miles or hours with details that in some countries are mandatory for authority reporting. Use the location so that the spares, tyres etc are assossiated with the vehicle when issued. If you have income from the vehicle you can analyse how it compares to costs."
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items.spares,product:0
+#: field:fms.wo.tasks.spares,product:0
+msgid "Spare Part"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,fcostpm:0
+msgid "Fuel Cost per mile"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,ownership:0
+msgid "Leased"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Remove Lines"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,help:fms.action_review_serviceitems_stage
+msgid "A Service Item are a task to be done for preemtive service or mandatory inspections of a vehicle that has to be done on a frequency in time or miles or regulary at the same time every year. A Service Item can be something the driver does, in house service or service bought from a vendor."
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,cost:0
+#: field:fms.service.items,cost:0
+msgid "Cost"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,ownership:0
+msgid "Ownership"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+#: selection:fms.vehicles,state:0
+msgid "Deprecated"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_fuellog.py:264
+#: code:addons/fms/fms_vehicles.py:60
+#, python-format
+msgid "vals! %s | %s"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,distance:0
+msgid "Distance that the vehicle has been on the road since purchase"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,fueltype:0
+msgid "95 (Euro)"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,pinvoice:0
+msgid "Purchase Invoice"
+msgstr ""
+
+#. module: fms
+#: field:product.product,spare_ok:0
+msgid "Is a vehicle spare"
+msgstr ""
+
+#. module: fms
+#: help:fms.service.items,delay:0
+msgid "Time that the vehicle are out of service in Hours"
+msgstr ""
+
+#. module: fms
+#: view:fms.fleet_card:0
+msgid "Card Info"
+msgstr ""
+
+#. module: fms
+#: field:fms.odometer,distance:0
+#: field:fms.vehicles,distance:0
+msgid "Distance"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "February"
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,freq_miles:0
+msgid "Frequency in miles"
+msgstr ""
+
+#. module: fms
+#: sql_constraint:res.company:0
+msgid "The company name must be unique !"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Name"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_analytic_lines
+msgid "Analytic Lines"
+msgstr ""
+
+#. module: fms
+#: view:board.board:0
+#: model:ir.actions.act_window,name:fms.action_vehicles_draft
+msgid "Vehicles in Draft State"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,odometer:0
+msgid "Odometer recordings"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Analysis Information"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "September"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: fms
+#: field:fms.fuellog,costpl:0
+msgid "Cost Per Ltr"
+msgstr ""
+
+#. module: fms
+#: help:fms.wo,odometer:0
+msgid "Odometer recording at service"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Search Vehicles"
+msgstr ""
+
+#. module: fms
+#: code:addons/fms/fms_service.py:88
+#: selection:fms.service.items,fixed_month:0
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: fms
+#: selection:fms.vehicles,vehicle_type:0
+msgid "Truck"
+msgstr ""
+
+#. module: fms
+#: help:fms.service.templ,name:0
+msgid "Service Templates are a collection of Service Tasks for a specific category of vehicles."
+msgstr ""
+
+#. module: fms
+#: field:fms.service.items,wo:0
+#: model:ir.model,name:fms.model_fms_wo
+msgid "Work Order Tasks"
+msgstr ""
+
+#. module: fms
+#: model:ir.actions.act_window,name:fms.fms_fleet_card_act
+#: model:ir.ui.menu,name:fms.menu_fms_card
+msgid "Fleet Cards"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+msgid "approved"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+#: selection:fms.wo,state:0
+msgid "Complete"
+msgstr ""
+
+#. module: fms
+#: view:fms.expenses:0
+#: view:fms.fuellog:0
+msgid "Payed"
+msgstr ""
+
+#. module: fms
+#: view:fms.wo:0
+msgid "Activate"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,pcost:0
+msgid "Purchase Value"
+msgstr ""
+
+#. module: fms
+#: help:fms.service.items,costpm:0
+#: help:fms.service.templ,costpm:0
+msgid "Approximate cost per mile for all service items"
+msgstr ""
+
+#. module: fms
+#: help:fms.vehicles,analytic_account_id:0
+msgid "Link this device to an analytic account if you need financial management. It enables you to connect devices with budgets, planning, cost and revenue analysis."
+msgstr ""
+
+#. module: fms
+#: model:ir.model,name:fms.model_fms_fleet_card
+msgid "Payment card commonly for gasoline, diesel or other expenses."
+msgstr ""
+
+#. module: fms
+#: selection:fms.odometer,type:0
+msgid "Private"
+msgstr ""
+
+#. module: fms
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,fcostpl:0
+msgid "Fuel Cost per litre"
+msgstr ""
+
+#. module: fms
+#: view:fms.vehicles:0
+msgid "Economic Analysis"
+msgstr ""
+
+#. module: fms
+#: field:account.invoice.line,fms_create:0
+msgid "New Vehicle"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.spares,spare_req_no:0
+msgid "Spares Req. No"
+msgstr ""
+
+#. module: fms
+#: field:fms.wo.tasks.labour,lab_req_no:0
+msgid "Labour Req No"
+msgstr ""
+
+#. module: fms
+#: view:fms.service.items:0
+msgid "Spares Parts and bought services"
+msgstr ""
+
+#. module: fms
+#: help:fms.odometer,fuel:0
+msgid "Fuel used during trip using vehicle l/100"
+msgstr ""
+
+#. module: fms
+#: field:fms.vehicles,serial:0
+msgid "productSerial #"
+msgstr ""
+
