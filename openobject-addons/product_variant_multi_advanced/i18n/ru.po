@@ -1,0 +1,89 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* product_variant_multi_advanced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-09 20:41+0000\n"
+"PO-Revision-Date: 2012-09-10 00:46+0300\n"
+"Last-Translator: oldbay <oldbay@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: product_variant_multi_advanced
+#: model:ir.model,name:product_variant_multi_advanced.model_product_product
+msgid "Product"
+msgstr "Продукт"
+
+#. module: product_variant_multi_advanced
+#: model:ir.model,name:product_variant_multi_advanced.model_product_template
+msgid "Product Template"
+msgstr "Шаблон продукта"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.product:0
+msgid "Error msg in raise"
+msgstr ""
+
+#. module: product_variant_multi_advanced
+#: field:product.product,description_sale:0
+msgid "Sale Description"
+msgstr "Описание продажи"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.template:0
+msgid ""
+"Error: The default UOM and the purchase UOM must be in the same category."
+msgstr ""
+"Ошибка: Единица измерения по умолчанию и единица измерения покупки должны "
+"быть в той же категории"
+
+#. module: product_variant_multi_advanced
+#: view:product.product:0
+msgid "Lots"
+msgstr "Лоты"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Ошибка: Неправильный EAN код"
+
+#. module: product_variant_multi_advanced
+#: view:product.product:0
+msgid "Descriptions"
+msgstr "Описания"
+
+#. module: product_variant_multi_advanced
+#: view:product.product:0
+msgid "Sale description"
+msgstr "Описание продажи"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Ошибка XML для архитектуры просмотра!"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Build Sale Description ->"
+#~ msgstr "Создание описания продажи ->"
+
+#~ msgid "Product Variant Multi Advanced"
+#~ msgstr "Многовариантный продукт расширение"
+
+#~ msgid ""
+#~ "This module extend the capacity of product_variant_multi giving the "
+#~ "posibility of building automatically the name, the description... of the "
+#~ "product from the product template.\n"
+#~ "Due to some limit of the orm you will need to apply some patch on the "
+#~ "server"
+#~ msgstr ""
+#~ "This module extend the capacity of product_variant_multi giving the "
+#~ "posibility of building automatically the name, the description... of the "
+#~ "product from the product template.\n"
+#~ "Due to some limit of the orm you will need to apply some patch on the "
+#~ "server"

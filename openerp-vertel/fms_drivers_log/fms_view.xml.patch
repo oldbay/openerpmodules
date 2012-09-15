@@ -1,0 +1,31 @@
+--- fms_view.xml.orig	2012-09-02 03:23:57.000000000 +0400
++++ fms_view.xml	2012-09-06 16:28:36.000000000 +0400
+@@ -14,7 +14,7 @@
+                 </page>
+         </field>
+     </record>
+-   
++<!--
+    <record model="ir.ui.view" id="view_vehicle_form_inherit2">
+        <field name="name">fms_drivers_log.vehicle.form.inherit2</field>
+        <field name="model">fms.vehicles</field>
+@@ -24,16 +24,17 @@
+            <page string="Odometer" position="replace"/>
+        </field>
+    </record>
++
+    <record model="ir.ui.view" id="view_vehicle_form_inherit3">
+        <field name="name">fms_drivers_log.vehicle.form.inherit3</field>
+        <field name="model">fms.vehicles</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="fms.fms_vehicle_form"/>
+        <field name="arch" type="xml">
+-           <page string="Fuel log" position="replace"/>
++           <page string="Fuel Log" position="replace"/>
+        </field>
+    </record>
+-
++-->
+     </data>
+ </openerp>
+ 

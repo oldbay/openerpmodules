@@ -1,0 +1,143 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* product_variant_configurator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-09 20:29+0000\n"
+"PO-Revision-Date: 2012-09-10 00:40+0300\n"
+"Last-Translator: oldbay <oldbay@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.line,configurator_id:0
+msgid "product_variant_configurator Test"
+msgstr ""
+
+#. module: product_variant_configurator
+#: field:sale.order.line.dimension_custom_values,mrp_production_id:0
+msgid "Production Order"
+msgstr "Производственный заказ"
+
+#. module: product_variant_configurator
+#: field:sale.order.line,dimension_custom_value_ids:0
+msgid "Dimension Custom Values"
+msgstr "Произвольное значение разновидности"
+
+#. module: product_variant_configurator
+#: field:sale.order.line.dimension_custom_values,sale_order_line_id:0
+msgid "Sale Order Line"
+msgstr "Линия заказа продаж"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.configurator,dimension_configuration_line_ids:0
+msgid "Configurator Lines"
+msgstr "Линия конфигуратора"
+
+#. module: product_variant_configurator
+#: model:ir.model,name:product_variant_configurator.model_product_product
+msgid "Product"
+msgstr "Продукт"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.line,dimension_custom_value:0
+#: field:sale.order.line.dimension_custom_values,custom_value:0
+msgid "Custom Value"
+msgstr "Произвольное значение"
+
+#. module: product_variant_configurator
+#: constraint:product.product:0
+msgid "Error msg in raise"
+msgstr ""
+
+#. module: product_variant_configurator
+#: model:ir.model,name:product_variant_configurator.model_product_variant_configurator_configurator
+msgid "product_variant_configurator.configurator"
+msgstr ""
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.line,allow_custom_value:0
+msgid "Allow custom values ?"
+msgstr "Разрешить пользовательские значения?"
+
+#. module: product_variant_configurator
+#: view:sale.order:0 view:sale.order.line:0
+msgid "Dimension / Value"
+msgstr "Разновидность / значение"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.configurator,product_variant_id:0
+msgid "Product Variant"
+msgstr "Вариант продукта"
+
+#. module: product_variant_configurator
+#: view:sale.order:0 view:sale.order.line:0
+msgid "Dimension Customizations"
+msgstr "Настройки разновидностей"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.line,dimension_type_value_id:0
+msgid "Dimension Value"
+msgstr "Значение разновидности"
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.configurator,product_tmpl_id:0
+msgid "Product Template"
+msgstr "Шаблон продукта"
+
+#. module: product_variant_configurator
+#: model:ir.model,name:product_variant_configurator.model_product_variant_configurator_line
+msgid "product_variant_configurator.line"
+msgstr ""
+
+#. module: product_variant_configurator
+#: view:product_variant_configurator.configurator:0
+msgid "Dimension"
+msgstr "Разновидность"
+
+#. module: product_variant_configurator
+#: model:ir.model,name:product_variant_configurator.model_sale_order_line_dimension_custom_values
+msgid "sale.order.line.dimension_custom_values"
+msgstr ""
+
+#. module: product_variant_configurator
+#: view:product_variant_configurator.configurator:0
+msgid "Validate order line"
+msgstr "Проверка строки заказа"
+
+#. module: product_variant_configurator
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Ошибка: неправильный EAN код"
+
+#. module: product_variant_configurator
+#: view:product_variant_configurator.configurator:0
+msgid "Cancel"
+msgstr "Отмена"
+
+#. module: product_variant_configurator
+#: model:ir.actions.act_window,name:product_variant_configurator.product_variant_configurator_action
+msgid "product_variant_configurator_action"
+msgstr ""
+
+#. module: product_variant_configurator
+#: field:product_variant_configurator.line,dimension_type_id:0
+#: field:sale.order.line.dimension_custom_values,dimension_type_id:0
+msgid "Dimension Type"
+msgstr "Тип разновидности"
+
+#. module: product_variant_configurator
+#: view:product_variant_configurator.configurator:0
+msgid "Product Configurator"
+msgstr "Конфигуратор продукта"
+
+#. module: product_variant_configurator
+#: model:ir.model,name:product_variant_configurator.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Линия заказа продаж"

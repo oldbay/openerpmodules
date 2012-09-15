@@ -1,0 +1,986 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* rent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-22 08:29+0000\n"
+"PO-Revision-Date: 2012-08-31 16:33+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: rent
+#: selection:rent.order.line,product_type:0
+msgid "Service"
+msgstr "Услуга"
+
+#. module: rent
+#: constraint:rent.order.line:0
+msgid ""
+"You can't use this product type with this product. Check that the product is "
+"marked for rent or for sale. Moreover, Service products must be declared as "
+"'Service' in the product view."
+msgstr ""
+"Вы не можете использовать этот тип продукта с этим продуктом. Убедитесь, что "
+"продукт маркирован для аренды или продажи. Кроме того, тип продукта должен "
+"быть объявлена ​​как \"Услуга\" ."
+
+#. module: rent
+#: model:ir.actions.server,name:rent.action_server_show_delivery_order
+msgid "Delivery Order"
+msgstr "Доставка заказа"
+
+#. module: rent
+#: code:addons/rent/rent.py:168
+#, python-format
+msgid "No invoices"
+msgstr "Нет счета"
+
+#. module: rent
+#: help:rent.order,description:0
+msgid "A small description of the rent order. Used in the report."
+msgstr "Небольшое описание заказа аренды. Используется в отчёте."
+
+#. module: rent
+#: help:rent.order.line,unit_price:0
+msgid ""
+"The price per duration or the sale price, depending of the product type. For "
+"rented product, the price is expressed in the product rent unity, not the "
+"order rent unity! BE CAREFUL!"
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:689
+#, python-format
+msgid "You must use a Month or Year unity with a Monthly invoicing period."
+msgstr ""
+"Вы должны использовать месяц или год для выставления счета за период месяца"
+
+#. module: rent
+#: selection:res.company,rent_default_begin:0
+msgid "Today"
+msgstr "Сегодня"
+
+#. module: rent
+#: field:rent.order.line,unit_price:0
+msgid "Product Unit Price"
+msgstr "Цена единицы продукта"
+
+#. module: rent
+#: field:rent.order,total_with_discount:0
+msgid "Untaxed amount (with discount)"
+msgstr "Необлагаемая сумма (со скидкой)"
+
+#. module: rent
+#: field:rent.order,company_id:0
+msgid "Company"
+msgstr "Компания"
+
+#. module: rent
+#: field:rent.order,description:0
+msgid "Object"
+msgstr "Объект"
+
+#. module: rent
+#: help:res.company,rent_afternoon_begin:0
+msgid ""
+"This time will be used as default rent begin date/time if you select "
+"'Tomorrow (Afternoon)' as default value."
+msgstr ""
+
+#. module: rent
+#: help:rent.order.line,product_type:0
+msgid ""
+"Select Rent if you want to rent this product. Service means that you will "
+"sell this product with the others rented products. Use it to sell some "
+"services like installation or assurances. Products which are sold will be "
+"invoiced once, with the first invoice."
+msgstr ""
+
+#. module: rent
+#: model:ir.module.module,description:rent.module_meta_information
+msgid ""
+"\n"
+"    This module manages the leasing of products to partners.\n"
+"    "
+msgstr ""
+"\n"
+"    Данный модуль управляет лизингом продуктов для партнёров.\n"
+"    "
+
+#. module: rent
+#: help:rent.order,date_created:0
+msgid "Date of the creation of this order."
+msgstr "Дата создания этого заказа."
+
+#. module: rent
+#: help:rent.order,partner_shipping_address_id:0
+msgid "Shipping address for current rent order."
+msgstr "Адрес доставки для текущего заказа аренды."
+
+#. module: rent
+#: help:rent.order,shop_id:0
+msgid "The shop where this order was created."
+msgstr "Магазин где этот заказ был создан."
+
+#. module: rent
+#: help:rent.order,salesman:0
+msgid "The salesman who handle this order, optional."
+msgstr "Продавец создавший данный заказ, необязательно."
+
+#. module: rent
+#: field:rent.order.line,line_price:0
+msgid "Subtotal"
+msgstr "Промежуточный итог."
+
+#. module: rent
+#: model:product.uom,name:rent.uom_day
+msgid "Day"
+msgstr "День"
+
+#. module: rent
+#: field:rent.order.line,product_id_uom:0
+msgid "UoM"
+msgstr "UoM"
+
+#. module: rent
+#: model:ir.model,name:rent.model_rent_interval
+msgid "rent.interval"
+msgstr ""
+
+#. module: rent
+#: help:rent.order,invoiced_rate:0
+msgid "Invoiced percent, calculated on the numver if invoices confirmed."
+msgstr ""
+"Процент выставленный в счёт, рассчитанный на номер счета при подтверждении."
+
+#. module: rent
+#: code:addons/rent/rent.py:696
+#, python-format
+msgid "Invalid invoice period"
+msgstr "неверный период счета-фактуры"
+
+#. module: rent
+#: selection:res.company,rent_default_begin:0
+msgid "Tomorrow (Morning)"
+msgstr "Завтра(утро)"
+
+#. module: rent
+#: view:rent.order:0 field:rent.order,notes:0 view:rent.order.line:0
+#: field:rent.order.line,notes:0
+msgid "Notes"
+msgstr "Примечание"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Go back to draft"
+msgstr "Вернутся к черновику"
+
+#. module: rent
+#: field:rent.order,total_taxes:0 view:rent.order.line:0
+#: field:rent.order.line,tax_ids:0
+msgid "Taxes"
+msgstr "Налоги"
+
+#. module: rent
+#: view:product.product:0
+msgid "To Purchase"
+msgstr "Для покупки"
+
+#. module: rent
+#: model:ir.model,name:rent.model_rent_order_line
+msgid "rent.order.line"
+msgstr ""
+
+#. module: rent
+#: view:rent.order:0 selection:rent.order,state:0
+#: selection:rent.order.line,state:0
+msgid "Ongoing"
+msgstr "Постоянный"
+
+#. module: rent
+#: sql_constraint:rent.order.line:0
+msgid "The price must be superior to 0."
+msgstr "Цена должна быть больше 0."
+
+#. module: rent
+#: selection:rent.order,state:0 selection:rent.order.line,state:0
+msgid "Cancelled"
+msgstr "Отменено"
+
+#. module: rent
+#: field:rent.order,date_in_shipping:0
+msgid "Return date"
+msgstr "Дата аренды"
+
+#. module: rent
+#: field:rent.order.line,duration_unit_price:0
+msgid "Duration Unit Price"
+msgstr "Стоимость единицы продолжительности"
+
+#. module: rent
+#: model:rent.interval,name:rent.interval_once
+msgid "Once"
+msgstr "Один раз"
+
+#. module: rent
+#: field:rent.order,shop_id:0
+msgid "Shop"
+msgstr "Магазин"
+
+#. module: rent
+#: help:rent.order,date_in_shipping:0
+msgid "Date of products return."
+msgstr "Дата возврата продукта."
+
+#. module: rent
+#: field:rent.order,partner_invoice_address_id:0
+msgid "Invoice Address"
+msgstr "Адрес счета"
+
+#. module: rent
+#: field:rent.order,reference:0
+msgid "Reference"
+msgstr "Ссылка"
+
+#. module: rent
+#: field:rent.order,total_products_sell_price:0
+msgid "Products sell price"
+msgstr "Цена продажи продукта"
+
+#. module: rent
+#: code:addons/rent/rent.py:154
+#, python-format
+msgid "The Rent Order \"%s\" has been reset."
+msgstr "Заказ аренды \"%s\" был отменен."
+
+#. module: rent
+#: model:ir.ui.menu,name:rent.rent_order_menu view:rent.order:0
+msgid "Rent Orders"
+msgstr "Заказ аренды"
+
+#. module: rent
+#: help:rent.order,rent_line_ids:0
+msgid "Lines of this rent order."
+msgstr "Линия этого заказа аренды."
+
+#. module: rent
+#: code:addons/rent/rent.py:414
+#, python-format
+msgid "This order have confirmed invoice, and can't be deleted right now."
+msgstr "Эти счета подтверждены и не могут быть сейчас удалены."
+
+#. module: rent
+#: field:rent.order,partner_order_address_id:0
+msgid "Ordering Address"
+msgstr "Адрес заказа"
+
+#. module: rent
+#: view:rent.order:0 selection:rent.order,state:0
+#: selection:rent.order.line,state:0
+msgid "Confirmed"
+msgstr "Подтверждение"
+
+#. module: rent
+#: help:rent.order.line,discount:0
+msgid "If you want to apply a discount on this order line."
+msgstr "если вы хотите применить скидку по этой строке заказа"
+
+#. module: rent
+#: code:addons/rent/rent.py:990
+#, python-format
+msgid "You can't remove an ongoing/done rent order."
+msgstr "Вы не можете удалить текущий/подтверждённый заказ аренды."
+
+#. module: rent
+#: view:rent.order:0
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#. module: rent
+#: code:addons/rent/rent.py:371
+#, python-format
+msgid ""
+"There is no incoming shipment associated to this rent order. It might be a "
+"service-only rent order, or the rent order hasn't been delivered yet."
+msgstr ""
+
+#. module: rent
+#: view:rent.order.line:0
+msgid "Product information"
+msgstr "Информация о продукте"
+
+#. module: rent
+#: help:rent.order,is_service_only:0
+msgid "True if the rent order only rent services products."
+msgstr ""
+
+#. module: rent
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Ошибка! Вы не можете создавать рекурсивные компании."
+
+#. module: rent
+#: help:rent.order,state:0
+msgid ""
+"Gives the state of the rent order :\n"
+"- Quotation\n"
+"- Confirmed\n"
+"- Ongoing (Products have been shipped)\n"
+"- Done (Products have been get back)"
+msgstr ""
+
+#. module: rent
+#: model:ir.actions.act_window,name:rent.rent_action_form view:rent.order:0
+msgid "Rent Order"
+msgstr "Заказ аренды"
+
+#. module: rent
+#: field:rent.order,out_picking_id:0
+msgid "Output picking id"
+msgstr "ID исходящей упаковки"
+
+#. module: rent
+#: field:rent.order,rent_line_ids:0
+msgid "Order Lines"
+msgstr "Линия заказа"
+
+#. module: rent
+#: field:rent.order,in_picking_id:0
+msgid "Input picking id"
+msgstr "ID входящей упаковки"
+
+#. module: rent
+#: help:rent.order,date_out_shipping:0
+msgid "Date of the shipping."
+msgstr "Дата доставки."
+
+#. module: rent
+#: code:addons/rent/rent.py:374
+#, python-format
+msgid "No Delivery Order"
+msgstr "Нет заказа доставки"
+
+#. module: rent
+#: code:addons/rent/rent.py:1270
+#, python-format
+msgid "Error !"
+msgstr "Ошибка !"
+
+#. module: rent
+#: field:res.company,rent_default_begin:0
+msgid "Rent default begin/shipping"
+msgstr "Аренда по умолчанию начало/доставка"
+
+#. module: rent
+#: code:addons/rent/rent.py:438
+#, python-format
+msgid "You can't cancel an order in this state."
+msgstr "Вы не можете отменить заказ в этом состоянии."
+
+#. module: rent
+#: help:rent.order,partner_invoice_address_id:0
+msgid "Invoice address for current Rent Order."
+msgstr "Адрес счета для текущего заказа на аренду."
+
+#. module: rent
+#: field:rent.order,total_taxes_with_discount:0
+msgid "Taxes (with discount)"
+msgstr "Налоги (со скидкой)"
+
+#. module: rent
+#: field:product.product,can_be_rent:0
+msgid "Can be rented"
+msgstr "Может быть арендован"
+
+#. module: rent
+#: selection:rent.order,state:0 selection:rent.order.line,state:0
+msgid "Done"
+msgstr "Сделано"
+
+#. module: rent
+#: view:res.company:0
+msgid "Configuration"
+msgstr "Настройки"
+
+#. module: rent
+#: field:rent.order,state:0 field:rent.order.line,state:0
+msgid "State"
+msgstr "Состояние"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Starts the rent manually"
+msgstr "Ручной старт аренды"
+
+#. module: rent
+#: help:rent.order.line,real_unit_price:0
+msgid ""
+"This price correspond to the price of the product, not matter its type. In "
+"the case of a rented product, its equal to the unit price expressed in order "
+"duration unity, and in the case of a service product, to the sale price of "
+"the product."
+msgstr ""
+
+#. module: rent
+#: view:rent.order.line:0
+msgid "Rent Order Lines"
+msgstr "Линия заказа аренды"
+
+#. module: rent
+#: help:rent.order,out_picking_id:0
+msgid "The picking object which handle Stock->Client moves."
+msgstr ""
+
+#. module: rent
+#: help:product.product,can_be_rent:0
+msgid "Enable this if you want to rent this product."
+msgstr ""
+"Включите этот параметр, если вы хотите разрешить аренду этого продукта."
+
+#. module: rent
+#: help:res.company,rent_default_begin:0
+msgid ""
+"Specify the default rent begin date/time value you want to have when you "
+"create a new rent order."
+msgstr ""
+
+#. module: rent
+#: field:rent.order.line,discount:0
+msgid "Discount (%)"
+msgstr "Скидка (%)"
+
+#. module: rent
+#: help:rent.order.line,duration_unit_price:0
+msgid "The price of ONE product for the entire duration."
+msgstr "Стоимость ОДНОГО продукта в течении всего срока."
+
+#. module: rent
+#: field:res.company,rent_afternoon_end:0
+msgid "Afternoon end"
+msgstr "Вторая половина для окончена"
+
+#. module: rent
+#: view:rent.order:0
+msgid "This rent order contains only services, no shipping will be done."
+msgstr ""
+
+#. module: rent
+#: model:ir.actions.server,name:rent.action_server_show_invoices
+#: view:rent.order:0 field:rent.order,invoices_ids:0
+msgid "Invoices"
+msgstr "Счета"
+
+#. module: rent
+#: model:product.uom,name:rent.uom_month
+msgid "Month"
+msgstr "Месяц"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Group by..."
+msgstr "Группировать по.."
+
+#. module: rent
+#: help:rent.order.line,product_id_uom:0
+msgid "The Unit of Measure of this product."
+msgstr "Единица измерения этого продукта."
+
+#. module: rent
+#: view:rent.order:0
+msgid "Untaxed Total"
+msgstr "Всего(не облагаемый налогом) "
+
+#. module: rent
+#: help:res.company,rent_afternoon_end:0
+msgid "This time will be used as the time of the rent end date."
+msgstr "Это время будет использовано в качестве времени окончания аренды."
+
+#. module: rent
+#: view:rent.order:0 field:rent.order,salesman:0
+msgid "Salesman"
+msgstr "Продавец"
+
+#. module: rent
+#: field:rent.order,partner_shipping_address_id:0
+msgid "Shipping Address"
+msgstr "Адрес для доставки"
+
+#. module: rent
+#: field:rent.order,invoiced_rate:0
+msgid "Invoiced"
+msgstr "Счёт"
+
+#. module: rent
+#: constraint:rent.order:0
+msgid "You can't use this duration unity with this invoicing period !"
+msgstr ""
+"Вы не можете эту продолжительность единиц с этим периодом выставления счета !"
+
+#. module: rent
+#: field:rent.order,rent_duration_unity:0
+msgid "Unity"
+msgstr "Еденица"
+
+#. module: rent
+#: field:res.company,rent_morning_begin:0
+msgid "Day begin"
+msgstr "Начало дня"
+
+#. module: rent
+#: help:rent.order.line,quantity:0
+msgid "How many products to rent."
+msgstr "Сколько продуктов в аренду."
+
+#. module: rent
+#: code:addons/rent/rent.py:1326
+#, python-format
+msgid ""
+"You don't have enought quantity of this product. You asked %d, but there are "
+"%d available. You can continue, but you are warned."
+msgstr ""
+
+#. module: rent
+#: help:product.product,rent_price_unity:0
+msgid "Rent duration unity in which the price is defined."
+msgstr "Продолжительность аренды единицы в которой цена определена."
+
+#. module: rent
+#: code:addons/rent/rent.py:413 code:addons/rent/rent.py:418
+#, python-format
+msgid "You can't cancel this order."
+msgstr "Вы не можете отменить этот заказ."
+
+#. module: rent
+#: code:addons/rent/rent.py:168
+#, python-format
+msgid "This rent order has not any invoices."
+msgstr "Эта аренда не имеет счета."
+
+#. module: rent
+#: field:rent.interval,method:0
+msgid "Method"
+msgstr "Метод"
+
+#. module: rent
+#: selection:res.company,rent_default_begin:0
+msgid "Empty"
+msgstr "Пустой"
+
+#. module: rent
+#: view:product.product:0
+msgid "To Rent"
+msgstr "В аренду"
+
+#. module: rent
+#: help:rent.order,in_picking_id:0
+msgid "The picking object which handle Client->Stock moves."
+msgstr ""
+
+#. module: rent
+#: help:product.product,rent_price:0
+msgid ""
+"The price is expressed for the duration unity defined in the company "
+"configuration."
+msgstr ""
+
+#. module: rent
+#: help:rent.order,discount:0
+msgid "Apply a global discount to this order."
+msgstr "Добавить глобальную скидку этому заказу."
+
+#. module: rent
+#: help:rent.order,rent_duration_unity:0
+msgid ""
+"The duration unity, available choices depends of your company configuration."
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:86
+#, python-format
+msgid "Client has not any address"
+msgstr "Клиент не имеет никакого адреса."
+
+#. module: rent
+#: sql_constraint:rent.order:0
+msgid "The begin date must later than the order date."
+msgstr "Дата начала должна быть позднее даты заказа."
+
+#. module: rent
+#: model:ir.actions.server,name:rent.action_server_show_incoming_shipment
+msgid "Incoming Shipment"
+msgstr "Входящая отгрузка"
+
+#. module: rent
+#: field:rent.order,date_created:0
+msgid "Date"
+msgstr "Дата"
+
+#. module: rent
+#: code:addons/rent/rent.py:86
+#, python-format
+msgid "You must define a least one default address for this client."
+msgstr ""
+
+#. module: rent
+#: view:rent.order:0 selection:rent.order,state:0
+#: selection:rent.order.line,state:0
+msgid "Quotation"
+msgstr "Цитата"
+
+#. module: rent
+#: model:ir.actions.report.xml,name:rent.rent_order_report
+msgid "Quotation / Rent Order"
+msgstr "Цитата  / Заказ аренды"
+
+#. module: rent
+#: code:addons/rent/rent.py:629
+#, python-format
+msgid "Invoice %d/%d"
+msgstr "Счёт %d/%d"
+
+#. module: rent
+#: help:rent.order,rent_invoice_period:0
+msgid "Period between invoices"
+msgstr "Период между счетами"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Compute"
+msgstr "Вычисление"
+
+#. module: rent
+#: code:addons/rent/rent.py:688
+#, python-format
+msgid "Invalid duration unity"
+msgstr "Неправильная продолжительность единицы"
+
+#. module: rent
+#: field:rent.order,date_end_rent:0
+msgid "Rent end date"
+msgstr "Конечная дата аренды"
+
+#. module: rent
+#: selection:res.company,rent_default_begin:0
+msgid "Tomorrow (Afternoon)"
+msgstr "Завтра (вторая половина дня)"
+
+#. module: rent
+#: model:ir.model,name:rent.model_res_company
+msgid "Companies"
+msgstr "Компании"
+
+#. module: rent
+#: field:rent.order,total_with_taxes_with_discount:0
+msgid "Total (with discount)"
+msgstr "Итого(со скидкой)"
+
+#. module: rent
+#: code:addons/rent/rent.py:116 code:addons/rent/rent.py:438
+#: code:addons/rent/rent.py:479 code:addons/rent/rent.py:991
+#, python-format
+msgid "Error"
+msgstr "Ошибка"
+
+#. module: rent
+#: help:rent.order,partner_id:0
+msgid "Select a customer. Only partners marked as customer will be shown."
+msgstr ""
+
+#. module: rent
+#: field:rent.order,total_products_buy_price:0
+msgid "Products buy price"
+msgstr "Цена покупки товара"
+
+#. module: rent
+#: sql_constraint:rent.order:0 sql_constraint:rent.order.line:0
+msgid "Discount must be a value between 0 and 100."
+msgstr "Скидка должна быть в пределах от 0 до 100."
+
+#. module: rent
+#: field:rent.order,rent_invoice_period:0
+msgid "Invoice Period"
+msgstr "Период счета"
+
+#. module: rent
+#: field:rent.order.line,quantity:0
+msgid "Quantity"
+msgstr "Количество"
+
+#. module: rent
+#: code:addons/rent/product.py:79 constraint:product.product:0
+#, python-format
+msgid "The Rent price must be a positive value."
+msgstr "Цена аренды должна не должна быть отрицательной."
+
+#. module: rent
+#: help:rent.order,notes:0
+msgid "Enter informations you want about this order."
+msgstr "Введите информацию об этом заказе."
+
+#. module: rent
+#: help:rent.order,partner_order_address_id:0
+msgid ""
+"The name and address of the contact who requested the order or quotation."
+msgstr ""
+
+#. module: rent
+#: help:rent.order,date_begin_rent:0
+msgid "Date of the begin of the leasing."
+msgstr "Дата начала аренды."
+
+#. module: rent
+#: view:rent.order.line:0
+msgid "General"
+msgstr "Общий"
+
+#. module: rent
+#: field:rent.order.line,real_unit_price:0
+msgid "Unit Price"
+msgstr "Цена единицы"
+
+#. module: rent
+#: field:rent.order,fiscal_position:0
+msgid "Fiscal Position"
+msgstr "Фискальная позиция"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Cancel"
+msgstr "Отмена"
+
+#. module: rent
+#: help:rent.order.line,description:0
+msgid "This description will be used in invoices."
+msgstr "Это описание будет использоваться в счетах."
+
+#. module: rent
+#: code:addons/rent/rent.py:598
+#, python-format
+msgid ""
+"Rental from %s to %s, invoice %d/%d.\n"
+"Invoice for the period from %s to %s."
+msgstr ""
+"Аренда из %s to %s, счёта %d/%d.\n"
+"счёт для периода с %s по %s."
+
+#. module: rent
+#: view:rent.order:0
+msgid ""
+"Are you sure that you want to stop this rent order now ? You can't restart a "
+"stopped order!"
+msgstr ""
+
+#. module: rent
+#: field:product.product,rent_price_unity:0
+msgid "Rent Price Unity"
+msgstr "Стоимость аренды единицы"
+
+#. module: rent
+#: code:addons/rent/rent.py:582
+#, python-format
+msgid " at "
+msgstr " на"
+
+#. module: rent
+#: model:rent.interval,name:rent.interval_month
+msgid "Monthly (Based on begin date)"
+msgstr "Ежемесячно (на основе даты начала)"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Show invoices"
+msgstr "Показ счетов"
+
+#. module: rent
+#: view:product.product:0
+msgid "Rent Price"
+msgstr "Цена аренды"
+
+#. module: rent
+#: sql_constraint:rent.order:0
+msgid "Rent Order reference must be unique !"
+msgstr "Ссылка на заказ аренды, должна быть уникальной !"
+
+#. module: rent
+#: code:addons/rent/rent.py:419
+#, python-format
+msgid "This order have confirmed shipping orders !"
+msgstr "Подтверждена доставка товаров по заказу !"
+
+#. module: rent
+#: help:res.company,rent_morning_begin:0
+msgid ""
+"This time will be used as default rent begin date/time if you select "
+"'Tomorrow (Morning)' as default value."
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:697
+#, python-format
+msgid ""
+"You can't use a monthly invoice period if the rent duration is less than 2 "
+"months. Use the 'Once' period in this case."
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:375
+#, python-format
+msgid ""
+"There is no delivery order associated to this rent order. It might be a "
+"service-only rent order, or the rent order hasn't been confirmed yet."
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:370
+#, python-format
+msgid "No Incoming Shipment"
+msgstr "Нет поступающих отгрузок"
+
+#. module: rent
+#: code:addons/rent/rent.py:1338
+#: model:ir.model,name:rent.model_product_product
+#: field:rent.order.line,product_id:0
+#, python-format
+msgid "Product"
+msgstr "Продукт"
+
+#. module: rent
+#: field:rent.order.line,description:0
+msgid "Description"
+msgstr "Описание"
+
+#. module: rent
+#: help:rent.order.line,product_id:0
+msgid "The product you want to rent."
+msgstr "Продукт, который вы хотите арендовать."
+
+#. module: rent
+#: field:product.product,rent_price:0
+msgid "Rent price"
+msgstr "Цена аренды"
+
+#. module: rent
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Ошибка: Неправильный ean код"
+
+#. module: rent
+#: field:res.company,rent_afternoon_begin:0
+msgid "Afternoon begin"
+msgstr "Начать после обеда"
+
+#. module: rent
+#: field:rent.order,total:0
+msgid "Untaxed amount"
+msgstr "Не облагаемая сумма"
+
+#. module: rent
+#: view:rent.order:0 field:rent.order,partner_id:0
+msgid "Customer"
+msgstr "Заказчик"
+
+#. module: rent
+#: field:rent.interval,name:0
+msgid "Name"
+msgstr "Имя"
+
+#. module: rent
+#: model:ir.model,name:rent.model_rent_order
+msgid "rent.order"
+msgstr ""
+
+#. module: rent
+#: help:rent.order,reference:0
+msgid "The reference is a unique identifier that identify this order."
+msgstr ""
+
+#. module: rent
+#: code:addons/rent/rent.py:1325
+#, python-format
+msgid "Not enought quantity !"
+msgstr "Нет достаточного количества!"
+
+#. module: rent
+#: field:rent.order.line,product_type:0
+msgid "Type of product"
+msgstr "Тип продукта"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Generate invoices manually"
+msgstr "Создание счетов вручную"
+
+#. module: rent
+#: field:rent.order,date_begin_rent:0
+msgid "Rent begin date"
+msgstr "Дата начала аренды"
+
+#. module: rent
+#: field:rent.order,date_out_shipping:0
+msgid "Shipping date"
+msgstr "Срок отгрузки"
+
+#. module: rent
+#: field:rent.order.line,order_id:0
+msgid "Order"
+msgstr "Заказ"
+
+#. module: rent
+#: code:addons/rent/rent.py:1270
+#, python-format
+msgid "There is no income account defined for this product: \"%s\" (id:%d)"
+msgstr ""
+
+#. module: rent
+#: field:rent.order,discount:0
+msgid "Global discount (%)"
+msgstr "Глобальная скидка (%)"
+
+#. module: rent
+#: view:rent.order:0
+msgid "Stops the rent manually"
+msgstr "Ручная остановка аренды"
+
+#. module: rent
+#: help:rent.order,rent_duration:0
+msgid "The duration of the lease, expressed in selected unit."
+msgstr "Срок аренды, выраженный в выбранных единицах."
+
+#. module: rent
+#: help:rent.order,fiscal_position:0
+msgid "Fiscal Position applied to taxes and accounts."
+msgstr "Финансовое положение применяется к налогам и счетам."
+
+#. module: rent
+#: model:ir.module.module,shortdesc:rent.module_meta_information
+#: selection:rent.order.line,product_type:0 view:res.company:0
+msgid "Rent"
+msgstr "Аренда"
+
+#. module: rent
+#: field:rent.order,is_service_only:0
+msgid "Is service only"
+msgstr "только услуга"
+
+#. module: rent
+#: model:product.uom,name:rent.uom_year
+msgid "Year"
+msgstr "Год"
+
+#. module: rent
+#: model:product.uom.categ,name:rent.duration_uom_categ
+#: field:rent.order,rent_duration:0
+msgid "Duration"
+msgstr "Продолжительность"
+
+#. module: rent
+#: view:rent.order:0 field:rent.order,total_with_taxes:0
+msgid "Total"
+msgstr "Итого"
