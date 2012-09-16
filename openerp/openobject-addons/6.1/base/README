@@ -1,0 +1,2 @@
+base_module_import_view.xml.patch
+Патч возврашает мастер загрузки модуля в "Настройки" -> "Модули" -> "Import Module"

@@ -1,0 +1,18 @@
+--- module/wizard/base_module_import_view.xml.orig	2012-01-14 06:00:18.000000000 +0400
++++ module/wizard/base_module_import_view.xml	2012-03-23 11:54:31.000000000 +0400
+@@ -55,7 +55,6 @@
+             <field name="target">new</field>
+         </record>
+ 
+-    <!-- This feature is now deprecated, but may come back later.
+         <menuitem
+             name="Import Module"
+             action="action_view_base_module_import"
+@@ -63,7 +62,6 @@
+             parent="menu_management"
+             groups="base.group_extended"
+             sequence="1"/>
+-    -->
+ 
+     </data>
+ </openerp>
