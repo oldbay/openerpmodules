@@ -1,2 +1,7 @@
 base_module_import_view.xml.patch
 Патч возврашает мастер загрузки модуля в "Настройки" -> "Модули" -> "Import Module"
+res_partner.py.patch
+dskarataev: Если вы столкнулись с выводом страны в полях адресов (например в Sale Order) по английски, 
+нужно отредактировать файл addons/base/res/res_partner.py, 
+метод def name_get(self, cr, user, ids, context=None): 
+внутри класса class res_partner_address(osv.osv):.

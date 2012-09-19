@@ -1,0 +1,11 @@
+--- res/res_partner.py.orig	2012-09-04 16:02:42.000000000 +0400
++++ res/res_partner.py	2012-09-20 00:56:50.000000000 +0400
+@@ -331,7 +331,7 @@
+         if not len(ids):
+             return []
+         res = []
+-        for r in self.read(cr, user, ids, ['name','zip','country_id', 'city','partner_id', 'street']):
++        for r in self.read(cr, user, ids, ['name','zip','country_id', 'city','partner_id', 'street'], context):
+             if context.get('contact_display', 'contact')=='partner' and r['partner_id']:
+                 res.append((r['id'], r['partner_id'][1]))
+             else:
